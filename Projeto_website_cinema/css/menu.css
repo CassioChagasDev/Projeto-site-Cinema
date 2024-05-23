@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+#menu{
+  background-color: #0a1b2d;
+  display: flex;
+  align-items:center;
+}
+
+#menu ul{
+  max-height: 40px;
+  max-width: 800px;
+  list-style-type: none;
+  padding: 0px;
+}
+
+#menu ul h1 {
+  font-family: "Titan One", sans-serif;
+  color: #1F9D61;
+  display: inline-block;
+  padding: 10px;
+  margin: 0;
+  vertical-align: middle; 
+}
+
+
+#menu ul li{
+  display: inline;
+  
+}
+
+#menu ul li a{
+  display: inline;
+  padding: 20px;
+  text-decoration: none;
+  color: #1F9D61;
+  transition-duration: 1.5s;
+}
+
+#menu ul li a:hover{
+  color: #0a1b2d;
+  text-decoration: underline;
+  background-color:#1F9D61 ;
+}
+
+#menu ul button{
+  padding-left: 20px;
+  display: inline;
+}
+
+#menu ul input{
+  display: inline;
+}
+
+#menu ul li:last-child {
+  margin-right: 0;
+}
+
+.search-box{
+  display: flex;
+  position: absolute;
+  left: 70%;
+  background-color: #071421;
+  height: 50px;
+  padding: 10px;
+  border-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-txt{
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #f0f5fb;
+  font-size: 16px;
+  line-height: 40px;
+  width: 0;
+  transition: .5s;
+}
+
+.search-btn{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #071421;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+.search-box:hover > .search-txt{ 
+  width: 140px;
+  padding: 0px 6px;
+}
+
+.search-box:hover > .search-btn{
+  background-color: #FFFFFF;
+}
+
+.user-btn{
+  display: flex;
+  position: absolute;
+  left: 90%;
+  justify-content: center;
+  align-content: space-between;
+}
+
+.user-btn > a:hover{
+  background-color: #FFFFFF;
+}
